@@ -12,7 +12,7 @@ export default function WeatherInfo({currentWeather}) {
         name
     } = currentWeather;
 
-    const {icon,description,main}=details
+    const {icon,main}=details
 
     const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`
   return (
