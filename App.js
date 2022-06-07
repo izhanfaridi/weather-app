@@ -25,7 +25,7 @@ export default function App() {
     setCurrentWeather(null)
     setErrMsg(null)
     try {
-      const {status} = await Location.requestBackgroundPermissionsAsync();
+      const {status} = await Location.requestForegroundPermissionsAsync();
 
       if (status !== 'granted'){
         setErrMsg("Access to location is needed to run the app!")
