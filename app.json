@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "weather-app",
-    "slug": "weather-app",
+    "name": "weather-app-izhan",
+    "slug": "weather-app-izhan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Created a Weather app using React-Native-Expo. Which takes current location of your place and displays the necessary weather details",
+    "githubUrl": "https://github.com/izhanfaridi/weather-app.git"
   }
 }
