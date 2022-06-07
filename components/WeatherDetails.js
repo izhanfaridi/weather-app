@@ -18,7 +18,7 @@ export default function WeatherDetails({currentWeather, unitSystem}) {
         visibility 
     } = currentWeather;
 
-    const windSpeed = unitSystem === 'metric' ? `${Math.round(speed)} m/s` : `${Math.round(speed)} miles/hr`
+    const windSpeed = unitSystem === 'metric' ? `${Math.round(speed)} m/s` : `${Math.round(speed)} mi/hr`
   return (
       <View style={styles.bottomDetails}>
           <View style={{ ...styles.bottomElement, borderRightWidth: 2, borderRightColor: BORDER_COLOR }}>
@@ -32,7 +32,7 @@ export default function WeatherDetails({currentWeather, unitSystem}) {
                 <Feather name="wind" size={24} color={PRIMARY_COLOR} />
               <View style={{ alignItems: 'flex-end' }}>
                   <Text style={{ fontWeight: '600' }}>Wind Speed :</Text>
-                  <Text style={{ fontSize: 15, marginTop: 5 }}>{windSpeed} %</Text>
+                  <Text style={{ fontSize: 15, marginTop: 5 }}>{windSpeed}</Text>
               </View>
           </View>
           <View style={{ ...styles.bottomElement, borderRightWidth: 2, borderTopWidth: 2, borderTopColor: BORDER_COLOR, borderRightColor: BORDER_COLOR }}>
